@@ -223,7 +223,7 @@ namespace CalculetteGraphique
         private void button24_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            currentInput += "/100";
+            currentInput = (currentInput.Replace('-','*')) + "/100";
             textBox1.Text = currentInput;
         }
     }
